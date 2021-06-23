@@ -1,0 +1,33 @@
+* {
+  margin: 10px;
+}
+
+.card-text {
+  font-weight: bold;
+}
+.container-idCard {
+  border: 1px solid black;
+}
+.container-greetings {
+  border: 1px solid black;
+  padding: 1%;
+  margin: 2% 0;
+  font-weight: bold;
+}
+.container-random {
+  border: 1px solid black;
+  padding: 1%;
+  margin: 2% 0;
+}
+.text-random {
+  font-weight: bold;
+}
+
+.container-boxcolor {
+  padding: 3%;
+  max-width: 98%;
+  height: 10vh;
+  border: 1px solid black;
+  font-size: 1.5em;
+  text-align: center;
+}
