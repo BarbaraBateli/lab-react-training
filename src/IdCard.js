@@ -1,26 +1,26 @@
-function IdCard(props) {
-  return (
-    <div>
-      <div className="card mb-3 container ">
-        <div className="row g-0">
-          <div className="col-md-4">
-            <img src={props.picture} className="img-fluid rounded-start" />
-          </div>
-          <div className="Person col-md-8">
-            <div className="card-body">
-              <p className="card-text">First name: {props.firstName} </p>
-              <p className="card-text">Last name: {props.lastName} </p>
-              <p className="card-text">Gender: {props.gender} </p>
-              <p className="card-text">Height: {props.height} </p>
-              <p className="card-text">
-                Birth: {props.birth.toLocaleString()}{' '}
-              </p>
-            </div>
-          </div>
+import React, { Component } from 'react';
+
+
+// Definition of the component IdCard
+class IdCard extends Component {
+  render() {
+    return (
+      <div className="IdCard box">
+        <img src={this.props.picture} alt=""/>
+        <div className="right">
+          <strong>First name</strong>: {this.props.firstName} <br/>
+          <strong>Last name</strong>: {this.props.lastName} <br/>
+          <strong>Gender</strong>: {this.props.gender} <br/>
+          <strong>Height</strong>: {this.props.height / 100}m <br/>
+          <strong>Birth</strong>: {this.props.birth.toDateString()} <br/>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default IdCard;
+
+
+
+            
